@@ -1,0 +1,232 @@
+@font-face {
+    font-family: myFont;
+    src: url(../font/Minecrafter.ttf);
+}
+
+body, .modal-content{
+    background-image:url("../images/Dirt.PNG");
+    background-repeat: repeat;
+}
+
+#container{
+    width:800px;
+    height:100vh;
+    position:relative;
+    display: inline-block;
+    transform: translateX(20%);
+}
+
+#itemsContainer {
+    width: 200px;
+    height: 700px;
+    position: absolute;
+    top: 0px;
+    transform: translateX(480%);
+    background: grey;
+}
+
+.tool{
+    height: 15%;
+    width: 50%;
+    border: 1px solid white;
+    margin: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inventory{
+    margin: 23%;
+    width: 50%;
+    height: 27%;
+    border: 1px solid black;
+}
+
+.inventory div{
+    width: 50%;
+    height: 27%;
+    border: 1px solid black;
+    margin: 3%;
+
+}
+
+.axe {
+    background-image: url("../images/stoneaxe_icon32.png");
+}
+
+.pickAxe {
+    background-image: url("../images/stonepickaxe_icon32.png");
+}
+
+.shovel {
+    background-image: url("../images/stoneshovel_icon32.png");
+}
+button{
+    font-size: 15px;
+    width: 62px;
+    height: 30px;
+}
+#themesBtn{
+    font-family: myFont;
+    border-radius: 37%;
+    font-size: 15px;
+    width: 120px;
+    height: 45px;
+    cursor: pointer;
+    position: relative;
+    left: 12%;
+}
+.modal-content {
+    font-family: myFont;
+}
+
+.modal-content button {
+    width: 20%;
+    margin: 1%;
+}
+
+.elem {
+    height:20px;
+    width:20px;
+    position:relative;
+    float:left;
+}
+.blackSky{
+    background:linear-gradient(to bottom, #010A10 30%,#59230B 80%,#2F1107 100%);
+}
+
+.blueSky{
+    background-color:rgb(0, 153, 255);
+}
+
+.cloud{
+    background-image:url("https://d1yn1kh78jj1rr.cloudfront.net/image/thumbnail/rDtN98Qoishumwih/minecraftpattern-04-091815-743_thumb.jpg");
+}
+
+.dirt{
+    background-image:url("../images/flat,800x800,075,t.u2.jpg");
+    background-size: 500%;
+}
+
+.grass{
+    background-image:url("../images/SKU0965_@-800x800.jpg");
+    background-size: 250%;
+}
+
+.stone{
+    background-image:url("../images/minecraft_stone_brick_simple_texture_wallpaper_by_elbarnzo-d82j2kd.jpg");
+    background-size: 500%;
+}
+
+.wood{
+    background-image:url("../images/spr_wood_0.png");
+}
+
+.leaves{
+    background-image:url("../images/3m3Oi.jpg");
+    background-size: cover;
+}
+
+.gold{
+    background-image:url("../images/Gold.PNG");
+}
+
+.redstone{
+    background-image:url("../images/Redstone.PNG");
+}
+
+.glass{
+    background-image:url("../images/Glass.PNG");
+}
+
+.snow{
+    background-image:url("https://d1yn1kh78jj1rr.cloudfront.net/image/thumbnail/rDtN98Qoishumwih/minecraftpattern-04-091815-743_thumb.jpg");
+}
+
+.sand{
+    background-image:url("../images/Sand.PNG");
+}
+
+.coat{
+    background-image:url("../images/Coat.PNG");
+}
+
+#lastElem{
+    position: absolute;
+    left: 15%;
+    height: 10%;
+    width: 30%;
+    border: 1px solid white;
+    margin: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .eye{
+    height:20px;
+    width:20px;
+    position:relative;
+    float:left;
+    background-image:url("https://i.pinimg.com/236x/c3/ae/f8/c3aef8464bfc5d0ffb90132793462113.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 28px;
+} */
+
+@media only screen and (max-width: 1080px) {
+    #container {
+        width: 600px;
+        transform: translateX(5%);
+    }
+    #itemsContainer {
+        transform: translateX(315%);
+        height: 525px;
+    }
+    .elem {
+        width: 15px;
+        height: 15px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #container {
+        width: 500px;
+        transform: translateX(5%);
+    }
+    #itemsContainer {
+        transform: translateX(375%);
+        width: 140px;
+        height:  437.5px;
+    }
+
+    .elem {
+        width: 12.5px;
+        height: 12.5px;
+    }
+}
+@media only screen and (max-width: 660px) {
+    #container {
+        width: 250px;
+        height: 350px;
+        transform: translateX(5%);
+    }
+    #itemsContainer {
+        transform: translateX(350%);
+        width: 75px;
+        height: 219px;
+    }
+    .elem {
+        width: 6.25px;
+        height: 6.25px;
+    }
+    #itemsContainer div {
+        margin: 10px;
+    }
+    #default, #snowTheme, #desertTheme, #morodorTheme {
+        font-size: 5px;
+        width: 32px;
+        height: 14px
+    }
+
+}
+
+
+
