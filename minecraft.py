@@ -1,4 +1,3 @@
-
 from bottle import route, get
 import bottle as b
 from sys import argv
@@ -7,6 +6,11 @@ from sys import argv
 @route('/')
 def index():
     return b.template('./landingpage.html')
+
+
+@route('/minecraft')
+def game():
+    return b.template('./minecraft.html')
 
 
 @get('/js/<filename:re:.*\.js>')
@@ -30,7 +34,8 @@ def img(filename):
 
 
 def main():
-	b.run(host='0.0.0.0', port=argv[1])
+    b.run(host='0.0.0.0', port=argv[1])
+
 
 if __name__ == "__main__":
     main()
