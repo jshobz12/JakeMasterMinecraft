@@ -1,14 +1,8 @@
 
+from bottle import route, get
 import bottle as b
-import os
-
 from sys import argv
 
-from bottle import default_app, request, route, response, get
-
-DEBUG = os.environ.get("DEBUG")
-
-b.debug(True)
 
 @route('/')
 def index():
@@ -35,7 +29,8 @@ def img(filename):
     return b.static_file(filename, root='images')
 
 
-if DEBUG:
-	b.run(host='localhost', port=7000)
-else:
+def main():
 	b.run(host='0.0.0.0', port=argv[1])
+
+if __name__ == "__main__":
+    main()

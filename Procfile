@@ -1,1 +1,1 @@
-web: python ./minecraft/minecraft.py $PORT
+web: python ./minecraft.py $PORT
